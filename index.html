@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>naver clone</title>
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="wrap-center">
+            <div id="header">
+                <button id="header-hamburger">
+                    <!-- ::before -->
+                    <div></div>
+                    <span class="blind">확장 영역</span>
+                    <!-- ::after -->
+                </button>
+                <button id="header-naverpay">
+                    <!-- ::before -->
+                    <div></div>
+                    <span class="blind">네이버 페이</span>
+                    <!-- ::after -->
+                </button>
+                <button id="header-talk">
+                    <!-- ::before -->
+                    <div></div>
+                    <span class="blind">알림</span>
+                    <!-- ::after -->
+                </button>
+                <button id="header-notice">
+                    <!-- ::before -->
+                    <div></div>
+                    <span class="blind">알림</span>
+                    <!-- ::after -->
+                </button>
+                <button id="header-shop">
+                    <!-- ::before -->
+                    <div></div>
+                    <span class="blind">알림</span>
+                    <!-- ::after -->
+                </button>
+            </div>
+
+            <div id="search">
+                <form action="">
+                    <a id="search-svg" href="#">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+                        </svg>
+                    </a>
+                    <label for="search-input" class="blind">검색어 입력</label>
+                    <input id="search-input" type="text" placeholder="검색어를 입력하세요." />
+                    <div id="search-right">
+                        <button href="#" id="search-keyboard">
+                            <span class="blind">입력도구</span>
+                        </button>
+                        <button href="#" id="search-recent">
+                            <span class="blind">자동완성/최근검색어펼치기</span>
+                        </button>
+                        <button id="search-button">
+                            <svg id="search-btn" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
+                                style="fill: #03c75a">
+                                <path
+                                    d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>메일</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>카페</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>블로그</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>스토어</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>뉴스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>증권</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>부동산</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>지도</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>웹툰</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div><img src="./image/header/navad.jpg" alt="듀얼소닉 광고"></div>
+                            <span>듀얼소닉</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main id="main">
+
+                <div id="main-left">
+                    <aside id="main-left-ad">
+                        <a href="#">
+                            <img src="./image/leftad.jpg">
+                        </a>
+                    </aside>
+
+
+                    <section id="main-newstand" class="left-section">
+                        <div id="main-newstand-top">
+                            <header>
+                                <a href="#" class="bold">뉴스스탠드</a>
+                                <a href="#" class="dot">언론사편집</a>
+                                <a href="#" class="slash">엔터</a>
+                                <a href="#" class="slash">스포츠</a>
+                                <a href="#" class="slash">경제</a>
+                            </header>
+                            <div id="main-newstand-gray">
+                                <div class="left">
+                                    <a href="#">전체언론사</a>
+                                    <div id="main-newstand-animation">
+                                        <a href="#">연합뉴스</a>
+                                        <div id="main-newstand-animation-target">
+                                            <div>
+                                                <a href="#">제로초 지금 배고파제로초 지금 배고파제로초 지금 배고파제로초 지금 배고파제로초 지금 배고파</a>
+                                                <a href="#">원초 지금 배고파원초 지금 배고파원초 지금 배고파원초 지금 배고파원초 지금 배고파원초 지금 배고파</a>
+                                                <a href="#">투초 지금 배고파투초 지금 배고파투초 지금 배고파투초 지금 배고파투초 지금 배고파투초 지금 배고파</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="#">뉴스스탠드</a>
+                                    <a href="#" class="bold">뉴스홈</a>
+                                </div>
+                            </div>
+                            <div id="main-newstand-grid">
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                            </div>
+                        </div>
+                        <footer>
+                            <button class="prev"><span class="blind">이전 페이지</span></button>
+                            <div class="text"><span class="news">언론사</span>&nbsp;더보기&nbsp;1<span class="total">/4</span>
+                            </div>
+                            <button class="next"><span class="blind">다음 페이지</span></button>
+                            <button class="list"><span class="blind">목록보기</span></button>
+                            <button class="grid"><span class="blind">격자보기</span></button>
+                        </footer>
+                    </section>
+
+
+                    <section id="main-shopping"></section>
+                </div>
+
+                <div id="main-right">
+                    <section id="main-login">
+                        <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+                        <a href="" id="main-login-loginBtn">
+                            <i class="MyView-module__naver_logo____Y442">
+                                <span class="blind">NAVER</span>
+                            </i>
+                            로그인
+                        </a>
+
+                        <ul>
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </section>
+                    <aside id="main-right-ad">
+                        <a href="#">
+                            <img src="./image/rightad.png">
+                        </a>
+                    </aside>
+                    <aside id="main-right-ad2">
+                        <a href="#">
+                            <img src="./image/rightad2.png">
+                        </a>
+                    </aside>
+
+
+                    <section id="main-weather">
+                        <div id="main-weather__top">
+                            <a href="#" id="main-weather__title">날씨</a>
+                            <a href="#" id="main-weather__forecast-comparison">예보 비교</a>
+                            <span id="main-weather__location">대한민국</span>
+                        </div>
+                        <div id="main-weather__bottom">
+
+                            <div>
+
+                            </div>
+                    </section>
+                    <section id="main-stock"></section>
+                </div>
+
+            </main>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
