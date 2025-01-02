@@ -421,6 +421,7 @@ body {
   line-height: 23px;
   font-weight: 800;
   text-align: left;
+  padding-bottom: 17px;
 }
 #main-left #main-newstand header a {
   position: relative;
@@ -443,15 +444,83 @@ body {
   color: var(--color_title);
 }
 #main-left #main-newstand #main-newstand-gray {
+  box-sizing: border-box;
   background-color: var(--color_option_bg);
   padding: 12px 20px;
   border-radius: 4px;
-  height: 50px;
   display: flex;
   justify-content: space-between;
+  color: var(--color_caption1);
+  font-size: 1.4rem;
+  line-height: 26px;
 }
-#main-left #main-newstand #main-newstand-gray .left, #main-left #main-newstand #main-newstand-gray .right {
+#main-left #main-newstand #main-newstand-gray .left,
+#main-left #main-newstand #main-newstand-gray .right {
   display: flex;
+}
+#main-left #main-newstand #main-newstand-gray .left i {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+  background-size: 452px 436px;
+  background-position: -175px -211px;
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 6px;
+  display: inline-block;
+  margin: 10px 0 0 5px;
+  vertical-align: top;
+}
+#main-left #main-newstand #main-newstand-gray #main-newstand-animation {
+  display: flex;
+  padding-left: 25px;
+  position: relative;
+}
+#main-left #main-newstand #main-newstand-gray #main-newstand-animation::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  width: 1px;
+  height: 12px;
+}
+#main-left #main-newstand #main-newstand-gray #main-newstand-animation div {
+  display: inline-block;
+  text-overflow: ellipsis;
+  width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#main-left #main-newstand #main-newstand-gray #main-newstand-animation div a {
+  position: relative;
+}
+#main-left #main-newstand #main-newstand-gray #main-newstand-animation div a::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  margin: 12px 6px 0 6px;
+  border-radius: 50%;
+  vertical-align: top;
+}
+#main-left #main-newstand #main-newstand-gray .right a:nth-child(2) {
+  padding-left: 25px;
+  position: relative;
+  font-weight: bold;
+}
+#main-left #main-newstand #main-newstand-gray .right a:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  width: 1px;
+  height: 12px;
 }
 #main-left #main-newstand #main-newstand-grid {
   margin-top: 18px;
@@ -471,6 +540,82 @@ body {
   height: 56px;
   line-height: 56px;
   background-color: white;
+}
+#main-left #main-newstand footer {
+  position: relative;
+  border-top: 1px solid var(--color_border_in);
+  padding: 10px 0 11px;
+  text-align: center;
+  display: block;
+  height: 58px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#main-left #main-newstand footer .prev,
+#main-left #main-newstand footer .next {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color_button_border);
+  background-color: #fff;
+  background-color: var(--color_button1_bg);
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  vertical-align: top;
+  cursor: pointer;
+}
+#main-left #main-newstand footer .prev::before {
+  transform: rotate(180deg);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+  background-size: 452px 436px;
+  background-position: -193px -424px;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 12px;
+  margin: auto;
+}
+#main-left #main-newstand footer .next::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+  background-size: 452px 436px;
+  background-position: -193px -424px;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 12px;
+  margin: auto;
+}
+#main-left #main-newstand footer .text {
+  min-width: 156px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  line-height: 35px;
+  font-weight: 600;
+  color: var(--color_caption2);
+}
+#main-left #main-newstand footer .text .news {
+  color: var(--color_news);
+}
+#main-left #main-newstand footer .text .total {
+  color: rgba(96, 96, 96, 0.5);
 }
 #main-left #main-shopping {
   width: 830px;
@@ -531,26 +676,41 @@ body {
   width: 420px;
   height: 80px;
 }
-#main-right #main-weather {
+
+.weather-stock-module {
+  display: flex;
+  flex-direction: column;
   width: 420px;
   height: 236px;
   padding: 0 18px;
   box-sizing: border-box;
 }
-#main-right #main-weather__top {
+.weather-stock-module .weather-stock-module-top {
   line-height: 40px;
   text-align: left;
   display: flex;
   padding: 6px 0;
 }
-#main-right #main-weather__title {
+.weather-stock-module .weather-stock-module-top__title {
   display: inline-block;
   padding-right: 7px;
   font-size: 1.5rem;
   font-weight: 800;
   vertical-align: top;
 }
-#main-right #main-weather__forecast-comparison {
+.weather-stock-module .weather-stock-module-top__side {
+  display: inline-block;
+  color: var(--color_caption2);
+  flex: none;
+  margin-left: auto;
+  font-size: 1.3rem;
+}
+.weather-stock-module .weather-stock-module-bottom {
+  flex-grow: 1;
+  border-top: 1px solid var(--color_border_in);
+}
+
+#main-weather #weather-module-icon {
   color: var(--color_caption2);
   display: inline-block;
   min-width: 75px;
@@ -565,7 +725,7 @@ body {
   vertical-align: top;
   text-decoration: none;
 }
-#main-right #main-weather__forecast-comparison::before {
+#main-weather #weather-module-icon::before {
   content: "";
   display: inline-block;
   background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
@@ -577,13 +737,189 @@ body {
   margin: 6px 2px 0 0;
   vertical-align: top;
 }
-#main-right #main-weather__location {
-  display: inline-block;
-  color: var(--color_caption2);
-  flex: none;
-  margin-left: auto;
-  font-size: 1.3rem;
+#main-weather #main-weather__bottom__right {
+  width: 180px;
+  height: 145px;
+  margin: 20px 0 18px;
 }
-#main-right #main-weather__bottom {
-  height: 184px;
+#main-weather #main-weather__bottom__right a {
+  display: inline-block;
+  cursor: pointer;
+}
+#main-weather #main-weather__bottom__right__top {
+  display: flex;
+  justify-content: center;
+  height: 86px;
+}
+#main-weather #main-weather__bottom__right__top__icon {
+  margin-right: 4px;
+}
+#main-weather #main-weather__bottom__right__top__icon::before {
+  content: "";
+  display: block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+  background-size: 641px 587px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 86px;
+  height: 86px;
+}
+#main-weather #main-weather__bottom__right__top__temperature {
+  min-width: 0;
+  font-size: 3.9rem;
+  line-height: 3.9rem;
+  letter-spacing: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#main-weather #main-weather__bottom__right__top__temperature div:last-child {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+}
+#main-weather #main-weather__bottom__right__mid {
+  margin-top: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+#main-weather #main-weather__bottom__right__mid a:nth-child(1) {
+  color: #3172e7;
+}
+#main-weather #main-weather__bottom__right__mid a:nth-child(2) {
+  color: #cd3534;
+}
+#main-weather #main-weather__bottom__right__mid a:nth-child(2)::before {
+  content: "";
+  display: block;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  margin: 0 5px 0 3px;
+  transform: skewX(-15deg);
+}
+#main-weather #main-weather__bottom__right__bottom {
+  display: block;
+  margin-top: 6px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#main-weather #main-weather__bottom__right__bottom a:nth-child(1) span {
+  color: #32a1ff;
+}
+#main-weather #main-weather__bottom__right__bottom a:nth-child(2) span {
+  color: #02c73c;
+}
+#main-weather #main-weather__bottom__right__bottom a:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  margin: 8px 6px 0;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+#main-stock #stock-module-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 10px 0 0 -4px;
+}
+#main-stock #stock-module-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+  background-size: 452px 436px;
+  background-position: -243px -316px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin: auto;
+}
+#main-stock .weather-stock-module-bottom {
+  display: flex;
+}
+#main-stock #main-stock__bottom__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#main-stock #main-stock__bottom__right a {
+  cursor: pointer;
+  font-weight: 500;
+}
+#main-stock #main-stock__bottom__right a:nth-child(1) {
+  font-size: 15px;
+  line-height: 18px;
+}
+#main-stock #main-stock__bottom__right a:nth-child(2) {
+  margin-top: 1px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.7px;
+}
+#main-stock #main-stock__bottom__right a:nth-child(3) {
+  color: #32a1ff;
+  font-size: 14px;
+}
+#main-stock #main-stock__bottom__right img {
+  width: 180px;
+  height: 72px;
+}
+#main-stock #main-stock__bottom__left ul {
+  margin: 8px 25px 15px;
+  width: 179.5px;
+  font-weight: 500;
+}
+#main-stock #main-stock__bottom__left ul li {
+  height: 36px;
+  border-bottom: 1px solid var(--color_border_in);
+  display: flex;
+  align-items: center;
+}
+#main-stock #main-stock__bottom__left ul li a {
+  line-height: 21px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#main-stock #main-stock__bottom__left ul li a i {
+  display: inline-block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+  background-size: 452px 436px;
+  background-position: -65px -424px;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+}
+#main-stock #main-stock__bottom__left ul li .stock_name {
+  font-size: 14.7px;
+}
+#main-stock #main-stock__bottom__left ul li .stock_ratio {
+  font-size: 11.55px;
+  color: #f44336;
+}
+#main-stock #main-stock__bottom__left ul li .stock_price {
+  font-size: 14.7px;
 }
